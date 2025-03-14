@@ -29,7 +29,7 @@ For detailed documentation, refer to the files linked below (written in Indonesi
 ## 🤝 Contributors
 | Contributor       | GitHub Profile                                  |
 |-------------------|------------------------------------------------|
-| **Fery Johar**  | [🌐 Profile](https://github.com/sandraalmeera) |
+| **Fery Johar**  | [🌐 Profile](https://github.com/Ferryjohar) |
 | **Rafid Dwi**      | [🌐 Profile](https://github.com/yesicafapa)    |
 
 ---
