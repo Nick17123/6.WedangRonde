@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupa Password - Masukkan Email</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fdeedc;
+            font-family: sans-serif;
+            padding-top: 80px; 
+        }
+
+        header {
+            width: 100%;
+            background-color: #6b4f27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed; 
+            top: 0;
+            left: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        input {
+            background-color: #FFE5B4;
+            color: #333;
+        }
+
+        button {
+            background-color: #6b4f27;
+            color: white;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        /* Link */
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Wedang Ronde</header>
+
+    <div class="container">
+        <h1 style="font-size: 35px; font-weight:lighter; color:black; margin-bottom: 20px;">Lupa Sandi</h1>
+        <p style="font-size: 14px; font-weight: 600; color:black; margin-bottom: 30px;">
+            Masukkan alamat Email Anda, Kami akan mengirimkan kode OTP ke Email Anda untuk verifikasi.
+        </p>
+
+        <form action="3.html">
+            <input type="email" name="email" placeholder="seseorang@gmail.com" required>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p style="margin-top: 30px; font-size: 16px;">
+            <a href="Loginhtml.html">Kembali ke Login</a>
+        </p>
+    </div>
+
+</body>
+</html>
