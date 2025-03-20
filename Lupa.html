@@ -4,42 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedang Ronde - Lupa Password</title>
-    <style>
-        * {margin: 0;padding: 0;box-sizing: border-box;}
-
-        body { display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100vh;background-color: #fdeedc;font-family: sans-serif;padding-top: 80px;}
-
-        header {width: 100%;background-color: #6b4f27;color: white; text-align: center;padding: 20px;font-size: 24px;font-weight: bold;position: fixed; top: 0;left: 0;}
-
-        .container { max-width: 400px; width: 100%; text-align: center; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-
-        input, button { width: 100%; padding: 14px; font-size: 16px; border-radius: 4px; border: none; box-sizing: border-box; }
-
-        input { width:100%; background-color: #FDEEDC; color: #333; border:none; border-radius:10px; margin:5px 0; padding:8px; }
-
-        button { background-color: #6b4f27; border:none; color: white; margin-top: 15px; cursor: pointer; border-radius: 10px; padding: 10px; }
-
-        
-        a { text-decoration: none; color: blue; font-weight: bold; }
-    </style>
 </head>
-<body>
+<body style="background-color: #fdeedc; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+        <header style="background-color: #6b4f27; color: white; text-align: center; padding: 20px; font-size: 24px; font-weight: bold;">Wedang Ronde</header>
 
-    <header>Wedang Ronde</header>
+    <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
+        <div style="background-color: white; padding: 30px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); width: 350px;">
+         <h2 style="text-align: center; color: #6b4f27;">LUPA PASSWORD</h2>
+         <p style="font-size: 15px; font-weight: 600; color:black;">Masukkan alamat Email, Kami akan mengirimkan kode OTP ke Email Anda untuk verifikasi.</p>
 
-    <div class="container">
-        <h1 style="font-size: 35px; font-weight:lighter; color:black; margin-bottom: 20px;">Lupa Sandi</h1>
-        <p style="font-size: 15px; font-weight: 600; color:black; margin-bottom: 30px;">
-            Masukkan alamat Email Anda, Kami akan mengirimkan kode OTP ke Email Anda untuk verifikasi.
-        </p>
-
-        <form action="3.html">
-            <input type="email" name="email" placeholder="seseorang@gmail.com" required>
-            <button type="submit">Kirim</button>
+        <form action="Lupa2.html">
+            <input type="email" name="email" placeholder="seseorang@gmail.com" required style="width: 100%; box-sizing:border-box; padding: 8px; margin: 5px 0; background-color: #fdeedc; border: none; border-radius: 10px;">
+            <button type="submit" style="width: 100%; background-color: #6b4f27;box-sizing: border-box; color: white; padding: 10px; font-size: 16px; border: none; border-radius: 10px; margin-top: 10px; cursor: pointer;">Kirim</button>
         </form>
 
-        <p style="margin-top: 30px; font-size: 16px;margin:5px ; padding: 5px;">
-            <a href="Loginhtml.html">Kembali ke Login</a>   
+        <p style="margin-top: 50px; font-size: 16px; text-align:center;">
+            <a href="Loginhtml.html" style="padding: 5px; margin: 5px 0;">Kembali ke Login</a>
         </p>
     </div>
 
