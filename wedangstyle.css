@@ -41,6 +41,22 @@ body {
     font-weight: bold;
 }
 
+.nav-menu li a { /* garis bawah profile,beranda, menu, etc */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position:relative
+} 
+.nav-menu li a.aktif::after {   /* garis bawah profile,beranda, etc. Tambah <ul class="nav-menu"> di ul */
+    content: "";
+    position: absolute;
+    bottom:-5px;
+    left: -15px; right: -15px; /*ukuran garis kanan kiri */
+    height: 4px; 
+    background-color: white;
+}
+
+/*  HALAMAN BERANDA  */
 .content {
     position: absolute;
     top: 25%;
@@ -101,3 +117,31 @@ body {
     width: 30px;
     height: 30px;
 }
+
+/*  BATAS HALAMAN BERANDA  */
+
+
+/*  HALAMAN PROFIL  */
+.profil-ikon-pengguna{
+    position: fixed;
+    top: 18%; 
+    height: 95px; width: 95px;
+
+}
+.profil{
+    position: fixed;
+    font-family: 'Poppinsregular';
+}
+
+.profil h1 {
+    text-align: center;
+    margin-top: 80%;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'Poppinsregular';
+    src: url('Gambar/z.woff2') format('woff2');
+}
+
+/*  BATAS HALAMAN PROFIL  */
