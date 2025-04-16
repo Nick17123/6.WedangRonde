@@ -128,18 +128,18 @@ body {
 
 .profil-ikon-pengguna{
     position: fixed;
-    top: 14%; 
+    top: 120px; 
     height: 95px; width: 95px;
 
 }
 .profil-nama-pengguna{
-    position: fixed; top:25%;
+    position: fixed; top:250px;
     font-size: 26px;
     font-family: 'Poppinsregular';
 }
 
 .formprofil {
-    position: relative; top: 35%;
+    position: relative; top: 330px;
     font-family: 'Poppinsregular';
     align-items: center;
 
