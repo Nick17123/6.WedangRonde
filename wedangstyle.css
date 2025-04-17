@@ -31,23 +31,28 @@ body {
   }
 
 .navbar {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    z-index: 9999;
-}
-
-.logowedangronde{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 12px;
+    right: 0px; left: 0px;
+    z-index: 9999;
 }
-
-
+.logo{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{              
+    width: 120px; height: 120px;
+}
 .navbar ul {
+    margin-right: 60px;
     list-style: none;
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
     gap: 65px;
 }
 
@@ -62,20 +67,22 @@ body {
     font-weight: bold;
 }
 
-.nav-menu li a { /* style garis bawah profile,beranda, menu, etc */
+.nav-menu li a { 
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     position:relative
 } 
-.nav-menu li a.garisbawahberanda::after {   /* garis bawah profile,beranda, etc. Tambah <ul class="nav-menu"> di ul */
+.nav-menu li a:hover::after,
+.nav-menu li a.garisbawah::after{   /* garis bawah profile,beranda, etc. Contoh Tambah <a href="Beranda.html" class="garisbawah">Beranda</a> */
     content: "";
     position: absolute;
     bottom:-5px;
-    left: -15px; right: -15px; /*ukuran garis kanan kiri */
-    height: 4px;    /*ketebalan garis bawah */
+    left: -15px; right: -15px;
+    height: 4px;    
     background-color: white;
 }
+
 /* BATAS CSS UTAMA */
 
 
@@ -196,7 +203,7 @@ body {
 
 .forminputprofil {
     position: relative;
-    margin-top: 300px;
+    margin-top: 340px;
     font-family: 'Poppinsregular';
     display: block;
     align-items: center;
@@ -210,7 +217,7 @@ body {
     margin-bottom: 20px;
 }
 
-.isi-form {
+.bagian-isi {
     flex:1;
     display:flex;
     flex-direction: column;
@@ -223,7 +230,7 @@ label{
 input[type="text"] {
     background-color: rgba(255, 255, 255, 0.28);
     border: 0;
-    width: 400px; 
+    width: 420px; height: 41px;
     padding:10px 12px;
     border-radius: 3px;
     box-sizing: border-box;
@@ -247,6 +254,10 @@ button
     font-family: 'Poppinsregular';
     color: white;
     cursor: pointer;
+}
+.bagian-isi.kanan{
+    display: flex;
+    align-items: flex-end;
 }
 
 
