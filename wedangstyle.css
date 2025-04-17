@@ -1,26 +1,47 @@
+/* BAGIAN CSS UTAMA */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    background: url('Gambar/background.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: relative;
-    color: white;
+    height: 100%;
     font-family: Arial, sans-serif;
 }
+
+.backgroundimg {
+    position: relative;
+    background-image: url('Gambar/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    color: white;
+}
+
+.backgroundimg .overlay {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
 
 .navbar {
     position: absolute;
     top: 20px;
     right: 50px;
+    z-index: 9999;
 }
+
+.logowedangronde{
+    display: flex;
+    align-items: center;
+}
+
 
 .navbar ul {
     list-style: none;
@@ -41,7 +62,7 @@ body {
     font-weight: bold;
 }
 
-.nav-menu li a { /* garis bawah profile,beranda, menu, etc */
+.nav-menu li a { /* style garis bawah profile,beranda, menu, etc */
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -55,6 +76,9 @@ body {
     height: 4px;    /*ketebalan garis bawah */
     background-color: white;
 }
+/* BATAS CSS UTAMA */
+
+
 
 /*  HALAMAN BERANDA  */
 .content {
@@ -62,6 +86,11 @@ body {
     top: 25%;
     left: 10%;
     max-width: 600px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    color: white;
 }
 
 .content h1 {
@@ -120,29 +149,59 @@ body {
 
 /*  BATAS HALAMAN BERANDA  */
 
+/*  HALAMAN MENU  */
+.menu {
+    position: fixed; top: 500px;
+    align-items: center;
+    font-family: 'poppinsregular';
+}
+
+.ikonmenu {
+    width: 300px; height: 300px;
+}
+
+
+/*  BATAS HALAMAN MENU  */
 
 /*  HALAMAN PROFIL  */
-.profil{
-    font-family: 'Poppinsregular';
+.kontenprofil {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
+.profil-ikon-pengguna {
+    position: absolute;
+    margin-top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 95px;
+    width: 95px;
+    background-image: url('Gambar/profileusericon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: block;
+  }
 
-.profil-ikon-pengguna{
-    position: fixed;
-    top: 120px; 
-    height: 95px; width: 95px;
-
-}
 .profil-nama-pengguna{
-    position: fixed; top:250px;
+    position:absolute;
+    align-items: center; justify-content: center;
+    margin-top:250px;
     font-size: 26px;
     font-family: 'Poppinsregular';
+    display: block;
 }
 
-.formprofil {
-    position: relative; top: 330px;
+.forminputprofil {
+    position: relative;
+    margin-top: 300px;
     font-family: 'Poppinsregular';
+    display: block;
     align-items: center;
-
+    justify-content: center;
+    align-content: center;
 }
 
 .baris {
@@ -164,7 +223,7 @@ label{
 input[type="text"] {
     background-color: rgba(255, 255, 255, 0.28);
     border: 0;
-    width: 500px; height: 45px;
+    width: 400px; 
     padding:10px 12px;
     border-radius: 3px;
     box-sizing: border-box;

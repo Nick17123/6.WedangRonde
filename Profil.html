@@ -6,7 +6,9 @@
     <title>Wedang Ronde</title>
     <link rel="stylesheet" href="wedangstyle.css">
 </head>
-<body style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('Gambar/background.jpg');backdrop-filter: blur(4px);">
+<body>
+<div class="backgroundimg"> 
+<div class="overlay"></div>
     <nav class="navbar">
         <ul class="nav-menu">
             <li><a href="Beranda.html">Beranda</a></li>
@@ -17,49 +19,50 @@
             <li><a href="Profil.html" class="garisbawahberanda">Profil</a></li>
         </ul>
     </nav>
-    <div class="profil-ikon-pengguna">
-        <img src="Gambar/profileusericon.svg" alt="ikonpengguna">
+    <div class="kontenprofil">
+        <div class="profil-ikon-pengguna"></div>
+        <div class="profil-nama-pengguna">Rafid Dwi Putra A</div>
+        <div class="forminputprofil">
+            <div class="baris">
+                <div class="isi-form">
+                    <label for="nama">Nama :</label>
+                    <input type="text"name="nama" required></input>
+                </div>
+                <div class="isi-form">
+                    <label for="email"> Email :</label>
+                    <input type="text"name="email"></input>
+                </div>
+            </div>
+            <div class="baris">
+                <div class="isi-form">
+                    <label for="nama">Jenis Kelamin :</label>
+                    <input type="text"name="nama"required></input>
+                </div>
+                <div class="isi-form">
+                    <label for="email">Nomor Telepon :</label>
+                    <input type="text"name="email" required></input>
+                </div>
+            </div>
+            <div class="baris">
+                <div class="isi-form">
+                    <label for="nama">Alamat :</label>
+                    <input type="text"name="nama"required></input>
+                </div>
+                <div class="isi-form">
+                    <label for="email">Bio :</label>
+                    <input type="text"name="email"required></input>
+                </div>
+            </div>
+            <div class="baris">
+                <div class="isi-form">
+                    <button>Simpan Perubahan</button>
+                </div>
+                <div class="isi-form">
+                    <button>Ganti Akun</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="profil-nama-pengguna">Rafid Dwi Putra A</div>
-    <form class="formprofil" action="#" method="post">
-        <div class="baris">
-            <div class="isi-form">
-                <label for="nama">Nama :</label>
-                <input type="text"name="nama" required>
-            </div>
-            <div class="isi-form">
-                <label for="email"> Email :</label>
-                <input type="text"name="email">
-            </div>
-        </div>
-        <div class="baris">
-            <div class="isi-form">
-                <label for="nama">Jenis Kelamin :</label>
-                <input type="text"name="nama"required>
-            </div>
-            <div class="isi-form">
-                <label for="email">Nomor Telepon :</label>
-                <input type="text"name="email" required>
-            </div>
-        </div>
-        <div class="baris">
-            <div class="isi-form">
-                <label for="nama">Alamat :</label>
-                <input type="text"name="nama">
-            </div>
-            <div class="isi-form">
-                <label for="email">Bio :</label>
-                <input type="text"name="email">
-            </div>
-        </div>
-        <div class="baris">
-            <div class="isi-form">
-                <button>Simpan Perubahan</button>
-            </div>
-            <div class="isi-form"></div>
-                <button>Ganti Akun</button>
-            </div>
-        </div>
-    </form>
+</div>
 </body>
 </html>
