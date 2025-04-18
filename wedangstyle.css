@@ -26,7 +26,7 @@ body {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.493);
     z-index: 1;
   }
 
@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 12px;
+    top: 5px;
     right: 0px; left: 0px;
     z-index: 9999;
 }
@@ -78,7 +78,7 @@ body {
     content: "";
     position: absolute;
     bottom:-5px;
-    left: -15px; right: -15px;
+    left: -4px; right: -4px;
     height: 4px;    
     background-color: white;
 }
@@ -157,17 +157,58 @@ body {
 /*  BATAS HALAMAN BERANDA  */
 
 /*  HALAMAN MENU  */
-.menu {
-    position: fixed; top: 500px;
-    align-items: center;
+.men {
+    position: relative ; 
+    display: flex;
     font-family: 'poppinsregular';
+    z-index: 2;
+    justify-content: center;
 }
 
-.ikonmenu {
-    width: 300px; height: 300px;
+.core {
+    position: absolute;
+    margin-top: 180px;
+    
+}
+.kontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+img{ 
+    display:block; width:320px; height: 320px;margin-left: auto; margin-right: auto
+}
+hr{
+    border-top: 1.5px solid rgba(255, 255, 255, 0.685); margin-top: 30px; margin-bottom: 30px; width: 575px;
+}
+p{ font-size: 20px; font-weight: 500; margin-top: 15px;}
+
+.hargadantombol{
+    display: flex;
+    align-items: center;
+    gap: 310px;  
 }
 
+.harga {
+  font-size: 19px;
+  font-weight: 900;
+  color: white;
+}
 
+.tombolorder {
+  background-color: #8B5E3B;
+  color: white;
+  width:180px ;height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 1000;
+  font-family: 'Poppinsregular';
+  cursor: pointer;
+}
+.tombolorder:hover {
+  background-color: #6d4428; 
+}
 /*  BATAS HALAMAN MENU  */
 
 /*  HALAMAN PROFIL  */
@@ -222,6 +263,10 @@ body {
     display:flex;
     flex-direction: column;
 }
+.bagian-isi.kanan{
+    display: flex;
+    align-items: flex-end;
+}
 label{
     margin-bottom: 3px;
     font-size: 18px;
@@ -239,25 +284,24 @@ input[type="text"] {
     font-family: 'Poppinsregular';
     color:white
 }
-button
-{
-    background-color: rgba(255, 255, 255, 0.28);
-    border: 0;
-    width:220px; height: 50px;
-    padding:10px 12px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    outline: none;
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 800;
-    font-family: 'Poppinsregular';
-    color: white;
-    cursor: pointer;
+
+.tombolprofil{  
+        background-color: rgba(255, 255, 255, 0.28);
+        border: 0;
+        width:220px; height: 50px;
+        padding:10px 12px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+        font-family: 'Poppinsregular';
+        cursor: pointer;
 }
-.bagian-isi.kanan{
-    display: flex;
-    align-items: flex-end;
+.tombolprofil:hover{
+    background-color: rgba(167, 167, 167, 0.28);
 }
 
 
