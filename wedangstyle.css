@@ -89,7 +89,8 @@ body {
 
 /*  HALAMAN BERANDA  */
 .content {
-    position: absolute;
+    position: relative;
+    z-index: 2;
     top: 25%;
     left: 10%;
     max-width: 600px;
@@ -311,3 +312,48 @@ input[type="text"] {
 }
 
 /*  BATAS HALAMAN PROFIL  */
+/*  HALAMAN SEJARAH */
+
+.sejarah {
+    position: relative;  
+    z-index: 2;
+    max-width: 1200px;
+    color: white;
+    padding: 50px;
+    margin: 0 auto;
+}
+.sejarah p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 100%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sejarah-text {
+    max-height: 260px; 
+    overflow-y: scroll;  /* Menambahkan scrollbar vertikal jika teks lebih panjang dari max-height */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.sejarah-text::-webkit-scrollbar {
+    width: 8px;  /* Lebar scrollbar */
+}
+
+.sejarah-text::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6); /* Warna scrollbar */
+    border-radius: 4px;
+}
+/* BATAS HALAMAN SEJARAH */
