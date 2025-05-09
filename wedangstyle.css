@@ -439,3 +439,41 @@ input[type="text"] {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 /* BATAS HALAMAN KERANJANG */
+/* GALERI */
+.gallery-container {
+    position: relative;
+    z-index: 2;
+    padding: 40px 60px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 130px;
+  }
+  
+  .gallery-item {
+    width: 70%;
+    height: 150px; 
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .galery-item img{
+    width : 100px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .galery-item:hover img {
+    transform: scale(1.05);
+  }
+/* BATAS HALAMAN GALERI */
+
