@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="wedangstyle.css">
 </head>
 <body class="backgroundimg">
+<div class="overlay"></div>
     <nav class="navbar">
         <div class="logo">
             <img src="Gambar/logowedangronde.png" alt="gambarlogo"></img>
@@ -17,9 +18,60 @@
             <li><a href="Menu.html">Menu</a></li>
             <li><a href="Sejarah.html">Sejarah</a></li>
             <li><a href="Galeri.html">Galeri</a></li>
-            <li><a href="Pesanan.html" class="garisbawah">Pesanan</a></li>
+            <li><a href="Keranjang.html" class="garisbawah">Keranjang</a></li>
             <li><a href="Profil.html">Profil</a></li>
         </ul>
     </nav>
+<div class="cart-container">
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="checkbox-cell"><input type="checkbox" checked></td>
+            <td>
+              <img src="Gambar/menuwedangronde.png" alt="Wedang Ronde" class="product-img" />
+              Wedang Ronde
+            </td>
+            <td>Rp. 10.000</td>
+            <td>
+              <div class="quantity-control">
+                <button>-</button>
+                <input type="text" value="3" readonly>
+                <button>+</button>
+              </div>
+            </td>
+            <td>Rp. 30.000</td>
+            <td><button class="remove-btn">Hapus</button></td>
+          </tr>
+          <tr>
+            <td class="checkbox-cell"><input type="checkbox" checked></td>
+            <td>
+              <img src="Gambar/menucemoe.png" alt="Cemoe" class="product-img" />
+              Cemoe
+            </td>
+            <td>Rp. 10.000</td>
+            <td>
+              <div class="quantity-control">
+                <button>-</button>
+                <input type="text" value="3" readonly>
+                <button>+</button>
+              </div>
+            </td>
+            <td>Rp. 30.000</td>
+            <td><button class="remove-btn">Hapus</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <button class="checkout-btn">Checkout</button>    
 </body>
 </html>
