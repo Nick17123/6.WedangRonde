@@ -357,3 +357,85 @@ input[type="text"] {
     border-radius: 4px;
 }
 /* BATAS HALAMAN SEJARAH */
+/* HALAMAN KERANJANG */
+  header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  table {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.359); /* warna putih semi-transparan */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .product-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  .quantity-control button {
+    background: #444;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .quantity-control input {
+    width: 30px;
+    text-align: center;
+    margin: 0 5px;
+    background: #222;
+    color: white;
+    border: none;
+  }
+  .remove-btn, .checkout-btn {
+    background: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .checkout-btn {
+    float: right;
+    margin-top: 20px;
+  }
+  .checkbox-cell {
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0; /* Pastikan lebih rendah dari tabel */
+}
+.cart-container {
+    margin-top: 100px; /* atur sesuai tinggi navbar */
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/* BATAS HALAMAN KERANJANG */
