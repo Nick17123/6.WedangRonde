@@ -357,88 +357,6 @@ input[type="text"] {
     border-radius: 4px;
 }
 /* BATAS HALAMAN SEJARAH */
-/* HALAMAN KERANJANG */
-  header nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  table {
-    position: relative;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.359); /* warna putih semi-transparan */
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  .product-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  .quantity-control {
-    display: flex;
-    align-items: center;
-  }
-  .quantity-control button {
-    background: #444;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-  }
-  .quantity-control input {
-    width: 30px;
-    text-align: center;
-    margin: 0 5px;
-    background: #222;
-    color: white;
-    border: none;
-  }
-  .remove-btn, .checkout-btn {
-    background: #8B5E3C;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  .checkout-btn {
-    float: right;
-    margin-top: 20px;
-  }
-  .checkbox-cell {
-    text-align: center;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 0; /* Pastikan lebih rendah dari tabel */
-}
-.cart-container {
-    margin-top: 100px; /* atur sesuai tinggi navbar */
-    position: relative;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-/* BATAS HALAMAN KERANJANG */
 /* GALERI */
 .gallery-container {
     position: relative;
@@ -477,3 +395,162 @@ input[type="text"] {
   }
 /* BATAS HALAMAN GALERI */
 
+ 
+/* Keranjang */
+
+  .contentk {
+    position: relative;
+    z-index: 2;
+    top: 18%;
+    align-items: center;
+    color: white;
+    max-height: 600px; 
+    overflow-y: scroll;  
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+  margin-left: 30%;
+  gap: 100px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  font-size: 22px;
+}
+
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  margin: 4px auto 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Order Card */
+.order-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 700px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.product-info {
+  flex-grow: 1;
+  color: white;
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-qty {
+  font-size: 16px;
+}
+
+.product-total {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* =========================== */
+.order-details {
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 18px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  flex: 2;
+}
+
+.separator {
+  flex: 0;
+  margin: 0 8px;
+}
+
+.value {
+  flex: 3;
+  text-align: left;
+}
+
+.arrow {
+  flex: 0;
+  color: white;
+  font-size: 20px;
+}
+.payment-summary {
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 18px;
+}
+
+.payment-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.payment-row.total {
+  font-weight: bold;
+  color: #f8f8f8;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-top: 10px;
+}
+/* Batas Halaman Keranjang */
